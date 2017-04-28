@@ -112,7 +112,7 @@ ul li a:focus {
 }
 /* Resize Logo */
 nav .brand-logo {
-    background-image: url("/userfiles/3087/CustomBlock/logo_2_285-300.png");
+    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/logo_2_285-300.png");
     height: 50px;
     width: 140px;
     margin-top: 6px;
@@ -310,14 +310,14 @@ footer.page-footer {
     margin: 1.4em 0;
 }
 #agd-logo {
-    background-image: url("/userfiles/3087/CustomBlock/agd-pace-logo-large.png"); 
+    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/agd-pace-logo-large.png"); 
     height: 190px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: calc(50% - 0px) calc(50% - 0px);
 }
 #adacerp-logo {
-    background-image: url("/userfiles/3087/CustomBlock/adaCerp-500-2.png");  
+    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/adaCerp-500-2.png");  
     height: 34px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -454,7 +454,7 @@ h1#courseName {
     color: #fff;
 }
 .site-header-contents {   
-    background: linear-gradient(rgba(0, 114, 206, 0.9), rgba(0, 114, 206, 0.8)), url("/userfiles/3087/CustomBlock/mb-bg-fb-08-75q.jpg");
+    background: linear-gradient(rgba(0, 114, 206, 0.9), rgba(0, 114, 206, 0.8)), url("https://go.bluevolt.com/userfiles/3087/CustomBlock/mb-bg-fb-08-75q.jpg");
     background-position: calc(100% - 0px) calc(98% - 0px);
     background-size: cover;
 }
@@ -562,7 +562,7 @@ ul.course-description-list li {
 }
 /* header image over course description: 655x260 */
 #course-description-header {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url('/userfiles/3087/course_descriptions/c2e8be66-51cc-4aba-abd1-ecf51b132286/DST-header.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url('https://go.bluevolt.com/userfiles/3087/course_descriptions/c2e8be66-51cc-4aba-abd1-ecf51b132286/DST-header.jpg');
     background-size: cover;
     height: 260px;
     margin: -14px -32px 32px -32px;
