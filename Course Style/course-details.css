@@ -1,0 +1,967 @@
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Global test
+   - - - - - - - - - - - - - - - - - - - - - - - */
+html {
+    font-size: 16px;
+}
+body {
+    font-family: Roboto,Noto,sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    transition: opacity ease-in 0.2s;
+    -webkit-font-smoothing: antialiased;
+}
+.header-1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 2.875rem;
+    text-transform: none;
+}
+.header-2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 2.875rem;
+    text-transform: none;
+}
+.content-1 {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.625rem;
+    text-transform: none;
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+/* Hide BV elements / 
+#uni-frontside-banner-wrapper,
+#uniFrontsideNavbar,
+#uni-frontside-footer {
+    display: none;
+}*/
+.no-margin {
+    margin: 0;
+}
+.btn-large {
+    margin-bottom: 15px;
+}
+.adec-blue {
+    background-color: #0072ce !important;
+}
+.adec-green {
+    background-color: #84BD00 !important;
+}
+.adec-grey {
+    background-color: #63666A !important;
+}
+.google-grey {
+    background-color: #f6f6f6 !important;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Top Navigation
+   - - - - - - - - - - - - - - - - - - - - - - - */
+
+#menu-navigation a {
+    color: #666;
+    -webkit-transition: all .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: all .3s linear;
+    font-family: Roboto, sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+}
+#menu-navigation a:hover {    
+    /*opacity: 0.8;*/
+    color: #464646;
+}
+.modal-trigger a.button-collapse,
+a:hover {
+    color: #0072ce;
+    opacity: .9;
+}
+/* Set color of links on hover */
+ul li a:hover,
+ul li a:focus {
+    color: #A6A7A3;
+}
+/* Resize Logo */
+nav .brand-logo {
+    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/logo_2_285-300.png");
+    height: 50px;
+    width: 140px;
+    margin-top: 6px;
+    opacity: 1;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+}
+nav a.button-collapse i {
+    color:#0072ce;
+}
+#profile-photo-topnav {
+    height: 32px !important;
+    width: 32px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 16px;
+}
+#profile-photo-topnav #imgUserThumb {
+    height: 32px !important;
+    width: 32px !important;
+}
+#admin-topnav #uni-frontside-banner-links {
+    display: flex;
+    font-size: .9rem;
+    font-weight: 300;
+    position: relative;
+    top: 12px;
+    right: 136px;
+}
+#admin-topnav {
+    position: relative;
+    top: -11px;
+    right: -140px;
+    display: flex;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Side Navigation
+   - - - - - - - - - - - - - - - - - - - - - - - */
+
+.side-nav a {
+    height: 4rem;
+    line-height: 4rem;
+}
+.side-nav li>a>i,
+.side-nav li>a>[class^="mdi-"],
+.side-nav li>a>[class*="mdi-"],
+.side-nav li>a>i.material-icons {
+    line-height: 4rem;
+}
+#sideprofile-photo-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#imgUserThumb {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    height: 64px !important;
+    width: 64px !important;
+}
+#profileItemUserData {
+    position: inherit;
+}
+#sideprofile-completedcourses {
+    padding-left: 1rem;
+    color: #63666a !important;
+}
+.toolbarItem {
+    display: inline-block;
+    position:relative;
+}
+.toolbarItemData {
+    font-size: 1.2rem;
+    line-height: 4rem;
+}
+#completionsItem,
+#enrolledCoursesItem {
+    line-height: 1.2rem;
+    background-color: #fff !important;
+    border: none;
+    font-size: .9rem;
+    padding: .4rem;
+}
+#enrolledCoursesItem {
+    top: -4px;
+}
+#sideprofile-name {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+#profileItemUserData div:nth-child(2) {
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Contact Modal
+   - - - - - - - - - - - - - - - - - - - - - - - */
+
+#modal-contact {
+    top: 16% !important;
+}
+.modal {
+    bottom: initial;
+    max-height: calc(100vh - 520px);    
+}
+.indent-left {
+    padding-left: 20px;
+    margin-top: -12px;
+}
+.modal-name-group {
+    padding-left: 2.8rem;
+    padding-top: 1rem;
+}
+.modal-name {
+    font-weight: 300;
+    font-size: 1.24em;
+    padding-bottom: .25em;
+}
+h5.modal-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #464646 !important;
+    font-size: 1.3em;
+    margin-top: -1em;
+    margin-bottom: 0;
+}
+.modal-header {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+}
+.modal-content {
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: #fafafa;
+}
+.modal-content h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 2.875rem;
+    text-transform: none;
+    margin-left: 40px;
+}
+.modal-content-header {
+    border: none;
+    padding-top: 1.71em;
+    margin-right: -10px;
+    height: 92px;
+}
+.modal-content .row {
+    padding-left: 60px;
+}
+span.modal-contact {
+    padding-left:16px;
+    line-height: 2;
+}
+span.contact-time {
+  margin-left: 4px;
+  font-size: 1rem;
+}
+.modal-name-group .material-icons {
+    opacity: .65;
+    display: inline-flex;
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+.modal .modal-content {
+    padding: 0;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Footer
+   - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer a:hover {
+    text-decoration: underline;
+}
+footer.page-footer {
+    margin-top: 0px;
+}
+.page-footer h6 {
+    font-size: 1.25em;
+    margin: 1.4em 0;
+}
+#agd-logo {
+    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/agd-pace-logo-large.png"); 
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 0px) calc(50% - 0px);
+}
+#adacerp-logo {
+    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/adaCerp-500-2.png");  
+    height: 34px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: .25em;
+}
+#adacerp-approval {
+    padding-top: .7em;
+}
+#agd-approval, #adacerp-approval {
+    color: #fff;
+    font-size: .92em;
+}
+#footer-connect {
+    margin-top: -2em;
+    width: 15%;
+    display: none;
+}
+#agd-wrapper {
+    margin-top: 3rem;
+    margin-left: -.5rem;
+}
+
+#adacerp-wrapper {
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Maintenance Message
+   - - - - - - - - - - - - - - - - - - - - - - - */
+
+.MaintenanceMessage ~ #bv-maintenance-message {
+    display: block;
+}
+#bv-maintenance-message {
+    width: 420px;
+    padding: 10px 12px;
+    margin: 0px auto;
+    font-size: .8em;
+    margin-bottom: -20px;
+    display: none;
+}
+#bv-maintenance-message .MaintenanceMessage {
+    font-family: 'Hind', sans-serif !important;
+    background-color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: inherit;
+    margin: 0 !important;
+    border: none;
+    width: 408px !important;
+}
+#bv-maintenance-message .MaintenanceMessage h3 {
+    padding-top: 0px;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 4px 4px;
+    line-height: 1.5;
+}
+#bv-maintenance-message .MaintenanceMessage td {
+    padding: 0;
+}
+#bv-maintenance-message .MaintenanceMessage a {
+    color: rgba(0,0,0,0.87);
+}
+#bv-maintenance-message-wrapper {
+    display: none;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Flash Message
+   - - - - - - - - - - - - - - - - - - - - - - - */
+
+.flash-messages-container {
+    background-color: #84BD00;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5rem;
+    border-radius: 2px;
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    height: auto;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Page Specific
+   - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - BODY - - - - - */
+/* fix page template /
+    .rounded-box-bottom, 
+    .blockContainer, 
+    .rounded-box-top, 
+    #uniFrontsideNavbar,
+    #detailContainer table {
+    display: none; 
+}
+div.rounded-box-content {
+  clear: none;
+  border: none;
+}*/
+#detailContainer,
+#uni-frontside-inner-wrapper, 
+div.rounded-box-content-marginfix {
+  padding: 0;
+}
+.CourseDetailContainer {
+  margin: 0 !important;
+}
+#courseOutlineContainer .contenttext p:nth-child(1) {
+    display: none;
+}
+#course_HtmlNotice {
+    display: none;
+}
+
+
+/* - - - - - Header - - - - - */
+h1#courseName {
+    font-family: "Open Sans", sans-serif;
+    font-weight:300;
+    font-size: 3rem;
+    color: #fff;
+}
+.site-header-contents {   
+    background: linear-gradient(rgba(0, 114, 206, 0.9), rgba(0, 114, 206, 0.8)), url("https://go.bluevolt.com/userfiles/3087/CustomBlock/mb-bg-fb-08-75q.jpg");
+    background-position: calc(100% - 0px) calc(98% - 0px);
+    background-size: cover;
+}
+.siteTitleBar {
+    margin-top: 30px;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 74%;
+    max-width: 1030px;
+    min-height: 100px;
+}
+
+
+/* - - - - - Tabs - - - - - */
+ul.tabs {
+    float: left;
+    overflow-x: hidden;
+}
+.tab-content {
+    border-top: solid 1px #ddd;
+    padding-top: 20px !important;
+}
+.tabs .tab a {
+    color: #0072CE;
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: -.005em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+.tabs .tab a:hover {
+    color: #0072CE;
+    opacity: 0.8;
+}
+.tabs .indicator {
+    background-color: #0072CE;
+}
+
+
+/* - - - - - Main Content (Course Info) - - - - - */
+#course-info {
+    margin-top: 20px;
+    min-height: 380px;        
+}
+/* content wrappers */
+#main-content-one,
+#main-content-two {
+    height: auto;
+    padding: 16px 32px;
+    overflow: auto;
+    font-weight: 300;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*min-height: 82vh;*/
+}
+#main-content-one p,
+#main-content-two p {
+    margin: 0 0 10px;
+}
+#main-content-one {
+    color: #58595b;
+    font-size: 1.16rem;
+}
+#main-content-two {
+    color: #444;
+}
+.z-depth-05 {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#outline-additional h4 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+ul.course-description-list li {
+    list-style-type: square;
+    margin-left: 3.5em;
+    line-height: 1.5em;   
+    font-size: 1.08rem;
+}
+#course-info h2 {
+    color: #007cc2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+#description h2 {
+    color: #007cc2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-bottom: .5rem;
+}
+#course-details h2 {
+    color: #007cc2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.contenttext {
+  color: inherit;  
+  font: inherit;
+  font-size: inherit; /*1.1em*/ 
+}
+/* header image over course description: 655x260 */
+#course-description-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url('https://go.bluevolt.com/userfiles/3087/course_descriptions/c2e8be66-51cc-4aba-abd1-ecf51b132286/DST-header.jpg');
+    background-size: cover;
+    height: 260px;
+    margin: -14px -32px 32px -32px;
+}
+#course-description-header h2 {
+    font-size: 5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.5;
+    overflow: hidden;
+    padding-top: 1.71em;
+    padding-left: 1.1em;
+}
+/* course image that's uploaded via bluevolt */
+.CourseDetailsImageContainer {
+    margin: 0 26px 16px 0;
+    border: solid 1px #eee;
+    display: none;
+}
+
+
+/* - - - - - Main Content Right (Course Details) - - - - - */
+#course-details {
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+h2.schedule {
+    display: none;
+}
+
+/* - - - - - Calendar link - - - - - */
+#aAddToCalendar img {
+    padding-bottom: 2px;
+    padding-right: 6px;
+}
+#aAddToCalendar, #aAddToCalendar a {
+    color: #444;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* - - - - - Start/End - - - - - */
+#scheduleStartEnd {
+    margin: 1rem 1.5rem 0 100px;
+    line-height: 1.5rem;
+    color: inherit;
+}
+#scheduleStartEnd strong {
+    font-size: 1em;
+    font-family: Roboto,Noto,sans-serif;    
+    font-weight: 500;
+    padding-right: 1rem;
+    line-height: 1.5rem;
+    margin-left: -100px;
+}
+
+/* - - - - - Instructor - - - - - */
+#course-details-instructor {
+    display: none;
+}
+
+/* - - - - - Location - - - - - */
+#pLocation {
+    margin-top: 20px;
+    line-height: inherit;
+    color: #444;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+#pLocation h2 {
+    font-size: 1em;
+    font-family: Roboto,Noto,sans-serif;    
+    font-weight: 500;    
+    line-height: 1.5;
+    color: inherit;
+    display: block !important;
+}
+#pLocation div {
+    display: inherit !important;
+    line-height: 1.5;
+}
+#pAddress {
+    color: inherit;    
+}
+
+/* - - - - - Enrollment status - - - - - */
+#lnkEnrollBottom {
+    float: none !important;
+}
+.lnkEnrollStatus {
+    font-family: Roboto,Noto,sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-size: 26px;
+    background-position: calc(2% - 0px) calc(50% - 0px);    
+    color: #444;
+    margin-bottom: .5rem;
+    padding-left: 2.2rem;
+    border: none !important;
+}
+.status-container {
+    float: none !important;
+    padding: 0;
+    position: relative;
+    margin-top: 2.5rem;
+}
+.status-container  a:hover {
+    color: inherit;
+    opacity: 1;
+}
+div.progress-bar-wrapper {
+    border: none;
+    margin: 0 0 0 -20px;
+}
+.progress-bar-outer {
+    font-size: .85rem !important;
+    font-weight: 400;
+    opacity: .95;
+}
+div#courseOutlineContainer > strong {
+    display: none;
+}
+
+/* - - - - - Unenroll - - - - - */
+#course-details-unenroll {
+    position: relative;
+}
+#btnUnEnroll {
+    font-size: .9rem;
+    font-weight: 400;
+    float: right;
+    position: relative;
+    right: 0;
+}
+#course-details-toggleschedules {
+    font-size: 1rem;
+    font-weight: 400;   
+    margin-top: 0;
+    position: relative;
+}
+a#toggleSchedules {
+    text-decoration: none;
+    display: none; /* hiding until time to style */
+}
+
+/* - - - - - Other schedules - - - - - */
+#divOtherSchedules {
+    margin-top: 40px;
+}
+
+/* - - - - - Additional links - - - - - */
+#course-details-additionallinks {
+    text-align: right;
+    margin-top: 1.5rem;
+}
+div#AdditionalLinks a {
+    font-size: .9rem;
+    font-weight: 400;
+}
+div#AdditionalLinks a:hover {
+    opacity: .9;
+}
+#AdditionalLinks #lnkEditCourse {
+    position: relative;
+    /*bottom: 26px;
+    right: 0;*/
+}
+#AdditionalLinks #lnkCourseEnrollment {
+    position: relative;
+    /*bottom: 2px;
+    right: 0;*/
+}
+#pnlCourseTitleCostButton h2 {
+    font-size: .95rem;
+}
+
+/* - - - - - Modules - - - - - */
+#course-modules {
+    margin-bottom: 3rem;
+}
+#rowSectionData table {
+    display: block !important;
+}
+#rowSectionData {
+    margin-bottom: 2rem;
+}
+/* Module Name - Text */
+#rowSectionData td {
+    font-size: 1.15rem;
+    padding: .25rem .15rem;
+    width: 70% !important;
+}
+
+/* Module Section Name */
+.bodyTextBold-small {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    /*line-height: 2.875rem;*/
+}
+/* Module Description */
+.contenttextgray {
+    font-size: .9rem;
+    font-family: Roboto,Noto,sans-serif;    
+    font-weight: 400;
+    color: #63666A;
+    margin-left: 3.5rem !important;
+}
+/* Module Name - Row */
+.sectionHeader {
+    border-bottom: 1px solid #eee;
+    background-color: inherit;
+    margin-top: 1rem;
+}
+span.module-progress-incomplete {
+    font-size: .8rem;
+    font-weight: 400;
+    opacity: .85;
+}
+a.view-launch {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.categoryClassLink {
+    padding-left: 2rem;
+}
+#DataGridModules {
+    margin-top: .5rem;
+}
+#DataGridModules tr td span {
+}
+tr td.contenttext div.contenttext {
+    font-size: 1rem;
+    font-weight: 400;
+}
+td.contenttext img {
+    margin: 7px 8px 0 20px !important;
+}
+img#sectionImage {
+    margin: 4px 8px 8px 0;
+}
+
+/* course dates container */
+#pnlSchedule {
+    max-height: none !important;
+    overflow-y: inherit !important;    
+}
+#pnlCourseTitleCostButton { /* original details tab */
+    float: none;
+    width: inherit;
+    margin-top: -1rem;
+    /*margin-bottom: -2rem; adds a scroll bar - don't use */  
+}
+#pnlEnroll {
+    padding: 4px 0;
+    margin-bottom: -3rem;
+}
+
+/* - - - - - Enroll button - - - - - */
+#pnlCourseTitleCostButton a#btnEnroll {
+    height: 54px;
+    line-height: 54px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #84BD00;
+    text-align: center;
+    letter-spacing: .5px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    transition: all .3s linear;
+    padding: .8rem 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}  
+input#btnSelectSchedule {
+    height: 54px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #84BD00;
+    text-align: center;
+    letter-spacing: .5px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    transition: all .3s linear;
+    padding: .5rem 1.5rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}   
+.custom-button .left,
+.custom-button .right {
+    display: none;
+}
+.custom-button span.middle p {
+    display: none;
+}
+
+/* - - - - - Course schedule radio buttons - - - - - */
+#outlineScheduleList, #detailScheduleList {
+    margin-top: 12px;
+}
+#outlineScheduleList li, #detailScheduleList li{
+    margin-top: 1.5rem;
+}
+#outlinescheduleList label, #detailScheduleList label {
+    visibility: visible !important;
+    float: left;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #84BD00;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid #84BD00;
+}
+#detailScheduleList {
+    font-size: .9rem;   
+}
+#detailScheduleList li {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+/* hide the colored category block */
+.properties .eventType {
+    display: none;
+}
+.seatsOpen {
+    margin-right: 5em;
+    float: right;
+    font-weight: 600;    
+}
+span.timeZone {
+    font-size: .8rem;
+    float: right;
+    padding-top: 2px;
+}
+.scheduleContainer {
+    margin-left: 34px;
+    margin-top: 20px;
+    opacity: .9;
+    overflow: auto;
+    width: 102%;
+}
+.scheduleContainer strong {
+    font-size: .8rem;
+}
+.scheduleContainer .label {
+    font-size: .8rem;
+    float: none;
+    vertical-align: inherit;
+    margin-left: -.4rem;
+}
+.scheduleContainer div {
+    display: -ms-grid !important;
+}
+.label {
+    color: inherit;
+}
+.BodytextBold {
+  font-family: inherit;
+  font-size: inherit;
+}
+.spacer {
+  height: 0 !important;
+}
+
+
+/* - - - - - Main Content Right (Course Outline/Objectives) - - - - - */
+
+/* outline from bv */
+#outline-additional {
+    padding: 0 0.75rem;
+    font-size: 1.1rem;
+    margin-top: 2.5rem;
+}
+#outline-additional ul.course-description-list li {
+    list-style: none;
+}
+ul.agenda-list {
+    margin-left: -1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;    
+}
+.agenda-times {
+    font-weight: 500;
+    width: 40%;
+    opacity: .95;
+}
+.agenda-description {
+    width: 60%;   
+}
+p.file-download {
+    margin: .75rem 0 1.5rem 0 !important;
+}
+img.speaker-headshot {
+    float: left;
+    margin: 6px 24px 6px 6px;
+    width: 126px;
+}
