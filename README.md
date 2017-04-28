@@ -1,1 +1,1 @@
-# xcelerate
+# accelerate
