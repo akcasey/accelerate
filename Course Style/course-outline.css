@@ -1,5 +1,5 @@
 /* - - - - - - - - - - - - - - - - - - - - - - -
-   Global
+   Global v4.28.17.1
    - - - - - - - - - - - - - - - - - - - - - - - */
 html {
     font-size: 16px;
@@ -55,12 +55,6 @@ a:focus, a:hover {
 p {
     margin: 0;
 }
-/* Hide BV elements */ 
-#uni-frontside-banner-wrapper,
-#uniFrontsideNavbar,
-#uni-frontside-footer {
-    display: none;
-}
 .no-margin {
     margin: 0;
 }
@@ -97,7 +91,6 @@ p {
     font-weight: 500;
 }
 #menu-navigation a:hover {    
-    /*opacity: 0.8;*/
     color: #464646;
 }
 .modal-trigger a.button-collapse,
@@ -295,8 +288,6 @@ span.modal-contact {
    Footer
    - - - - - - - - - - - - - - - - - - - - - - - */
 
-#contact {
-}
 footer a:hover {
     text-decoration: underline;
 }
@@ -313,8 +304,6 @@ footer.page-footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: calc(50% - 0px) calc(50% - 0px);
-}
-#agd-approval {
 }
 #adacerp-logo {
     background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/adaCerp-500-2.png");  
@@ -418,18 +407,6 @@ footer.page-footer {
    - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* - - - - - BODY - - - - - */
-/* fix page template */
-.rounded-box-bottom, 
-.blockContainer, 
-.rounded-box-top, 
-#uniFrontsideNavbar,
-#detailContainer table {
-  display: none;
-}
-div.rounded-box-content {
-  clear: none;
-  border: none;
-}
 #detailContainer,
 #uni-frontside-inner-wrapper, 
 div.rounded-box-content-marginfix {
@@ -510,7 +487,6 @@ ul.tabs {
     position: relative;
     display: flex;
     flex-direction: column;
-    /*min-height: 82vh;*/
 }
 #main-content-one p,
 #main-content-two p {
@@ -559,7 +535,7 @@ ul.course-description-list li {
 .contenttext {
   color: inherit;  
   font: inherit;
-  font-size: inherit; /*1.1em*/ 
+  font-size: inherit;
 }
 /* header image over course description: 655x260 */
 #course-description-header {
@@ -730,13 +706,9 @@ div#AdditionalLinks a:hover {
 }
 #AdditionalLinks #lnkEditCourse {
     position: relative;
-    /*bottom: 26px;
-    right: 0;*/
 }
 #AdditionalLinks #lnkCourseEnrollment {
     position: relative;
-    /*bottom: 2px;
-    right: 0;*/
 }
 #pnlCourseTitleCostButton h2 {
     font-size: .95rem;
@@ -764,7 +736,6 @@ div#AdditionalLinks a:hover {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    /*line-height: 2.875rem;*/
 }
 /* Module Description */
 .contenttextgray {
@@ -795,8 +766,6 @@ a.view-launch {
 #DataGridModules {
     margin-top: .5rem;
 }
-#DataGridModules tr td span {
-}
 tr td.contenttext div.contenttext {
     font-size: 1rem;
     font-weight: 400;
@@ -817,7 +786,6 @@ img#sectionImage {
     float: none;
     width: inherit;
     margin-top: -1rem;
-    /*margin-bottom: -2rem; adds a scroll bar - don't use */  
 }
 #pnlEnroll {
     padding: 4px 0;
@@ -825,7 +793,7 @@ img#sectionImage {
 }
 
 /* - - - - - Enroll button - - - - - */
-#pnlCourseTitleCostButton a#btnEnroll {
+#pnlCourseTitleCostButton a#btnEnroll, a#btnEnrollPublic {
     height: 54px;
     line-height: 54px;
     text-decoration: none;
@@ -841,7 +809,7 @@ img#sectionImage {
     text-transform: uppercase;
     font-weight: 500;
 }  
-input#btnSelectSchedule {
+input#btnSelectSchedule, #btnEnrollPublic {
     height: 54px;
     text-decoration: none;
     color: #fff;
@@ -966,4 +934,3 @@ img.speaker-headshot {
     margin: 6px 24px 6px 6px;
     width: 126px;
 }
-  
