@@ -1036,22 +1036,6 @@ img.speaker-headshot {
     p.indent-left {
       padding-left: .3rem;
     }
-    .btn-large {
-      height: 48px !important;
-      line-height: 48px !important;
-    }
-    .course-type-1 {
-      background-position: calc(21% - 0px) calc(100% - 0px);
-    }
-    .course-type-2 {
-      background-position: calc(42% - 0px) calc(100% - 0px);
-    }
-    .course-type-3 {
-      background-position: calc(66% - 0px) calc(100% - 0px);
-    }
-    .intro {
-      background-position: calc(40% - 0px) calc(50% - 0px);
-    }
     .container h1 {
       font-size: 3.9rem;
     }
@@ -1068,16 +1052,6 @@ img.speaker-headshot {
   .sign-up-button-container .btn-large {
     padding: 0 .65rem !important;
   }
-  .btn-large {
-    height: 48px !important;
-    line-height: 48px !important;
-  }
-  .course-type-2 {
-    background-position: calc(34% - 0px) calc(100% - 0px) !important;
-  }
-  .course-type-3 {
-    background-position: calc(62% - 0px) calc(100% - 0px) !important;
-  }  
 }
 
 /* tablet (portrait) */
@@ -1111,22 +1085,6 @@ img.speaker-headshot {
     .modal .modal-content {
       padding: 2px 26px 2px 12px !important; /*mobile only*/
     }
-    /* shrink US/CAN/INTL buttons */
-    .sign-up-button-container .btn-large {
-      padding: 0 1.15rem;
-    }
-    .course-type-1 {
-      background-position: calc(18% - 0px) calc(100% - 0px);   
-    }
-    .course-type-2 {
-      background-position: calc(42% - 0px) calc(100% - 0px);
-    }
-    .course-type-3 {
-      background-position: calc(63% - 0px) calc(100% - 0px);
-    }
-    .intro {
-      background-position: calc(40% - 0px) calc(50% - 0px);
-    }  
 }
 
 /* laptop / tablet (landscape) */
@@ -1142,9 +1100,6 @@ img.speaker-headshot {
     #modal-contact {
         width: 76%;
         max-height: calc(81vh - 0px);    
-    }
-    .course-type-1 {
-      background-position: calc(58% - 0px) calc(100% - 0px);
     }
     .modal .modal-content h4 {
       margin-left: 22px;
