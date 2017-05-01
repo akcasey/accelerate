@@ -1,18 +1,11 @@
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-<!-- - - - - Animate on Scroll - - - - -->
-    <script>
+// - - - - Animate on Scroll - - - - 
         AOS.init({
             duration: 400,
             easing: 'ease-in-sine',
             delay: 100,
         });
-    </script>   
   
-<!-- - - - - Materialize Initialization - - - - -->
-    <script>
+// - - - - Materialize Initialization - - - -
         (function($){
             $(function(){
                 $('.button-collapse').sideNav();
@@ -22,10 +15,8 @@
                 $('.materialboxed').materialbox();
             });
         })(jQuery);
-    </script>
 
-<!-- - - - - Side Navigation - - - - -->
-    <script>
+// - - - - Side Navigation - - - -
         $(function(){
             var $image = $('#sideprofile-photo').clone();
             $('#profile-photo-topnav').html($image);
@@ -36,19 +27,15 @@
         document.getElementById('sideprofile-completedcourses').appendChild(document.getElementById('completionsItem'));
         document.getElementById('sideprofile-completedcourses').appendChild(document.getElementById('enrolledCoursesItem'));
         document.getElementById('admin-topnav').appendChild(document.getElementById('uni-frontside-banner-links'));
-    </script>
 
-<!-- - - - - Maintenance Notification - - - - -->
-    <script>
+// - - - - Maintenance Notification - - - -
         $("#bv-maintenance-message").append($(".MaintenanceMessage"));
 
         if($('.MaintenanceMessage').length){
             $('#bv-maintenance-message-wrapper').show();
         }
-    </script>
 
-<!-- - - - - Tabs  - - - - -->
-    <script>
+// - - - - Tabs  - - - -
         $(document).ready(function() {
             $('ul.tabs').tabs();
             $(".course-enrolled-link").click(function() { $('ul.tabs').tabs('select_tab', 'enrolled-courses'); });
@@ -56,10 +43,8 @@
             $(".course-calendar-link").click(function() { $('ul.tabs').tabs('select_tab', 'calendar'); });
             $(".course-categories-link").click(function() { $('ul.tabs').tabs('select_tab', 'categories'); });
         });
-    </script>
 
-<!-- - - - - Page Specific  - - - - -->
-    <script>
+// - - - - Page Specific  - - - -
         $(document).ready(function() {
             $("#page-title").prepend($("#courseName"));                     // Relocating page name
             $('.expandable').removeClass('expandable');                     // Remove uni-frontside-list-item hover class
@@ -77,8 +62,6 @@
                 $('#outline').load('https://go.bluevolt.com/A-dec/CourseOutline' + coursename + ' #courseOutlineContainer');
             }); */
         });   
-    </script>
-    <script>
         // Fixing the radio buttons: assigning new id and adding label
         $('input[type="radio"]').each(function (i) {
             $(this).attr('id', 'rbSchedule' + i);
@@ -90,4 +73,3 @@
             // Change id of selected radio button
             $('input[name=schedules]:checked').attr('id', 'rbSchedule');
         });
-    </script>
