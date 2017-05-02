@@ -1,5 +1,5 @@
 /* - - - - - - - - - - - - - - - - - - - - - - -
-   Global
+   Global 5.2.17.1
    - - - - - - - - - - - - - - - - - - - - - - - */
 html {
     font-size: 16px;
@@ -278,6 +278,10 @@ h5.modal-header {
 span.modal-contact {
     padding-left:16px;
     line-height: 2;
+}
+span.contact-time {
+  margin-left: 4px;
+  font-size: 1rem;
 }
 .modal-name-group .material-icons {
     opacity: .65;
@@ -684,4 +688,205 @@ span.timeZone {
 #outline-additional {
     padding: 0 0.75rem;
     font-size: 1.1rem;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -
+   Responsive
+   - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* mobile */
+@media only screen and (max-width: 620px) {
+    .modal {
+      top: 12% !important; /*mobile only*/
+      height: inherit; /*height: calc(76vh - 0px);*/
+      max-height: 80%; /*inherit;*/
+      overflow-y: scroll;
+    }
+    #modal-contact {
+      top: 4% !important;
+      max-height: 90%;
+    }
+    #modal-contact .modal-content {
+      padding: 2px 12px 2px 12px !important;
+    }
+    .select-wrapper {
+      width: 13rem;
+    }
+    .navbar-fixed {
+      height: 62px;
+    }
+    .modal-content-header {
+      height: 80px;
+      padding-top: 1.5rem;
+    }
+    .modal-content h4.signup-title {
+      font-size: 1.75rem; /*mobile only*/
+      margin-top: 1rem; /*mobile only*/
+      margin-bottom: 1.75rem; /*mobile only*/  
+    }
+    span.step-numbers {
+      font-size: 1.25rem; /*mobile only*/
+      padding: 6px 10px; /*mobile only*/
+    }
+    .steps {
+      font-size: 1.15rem; /*mobile only*/
+      margin-top: 0;
+    }
+    .modal .modal-content {
+      padding: 2px 26px 2px 12px !important; /*mobile only*/
+    }
+    .modal .modal-content h4 {
+      margin-left: 12px;
+    }
+    .modal .modal-content .modal-header {
+      padding: .5rem 0 .5rem 0;
+    }    
+    .modal-name-group {
+      padding-top: 0;
+      padding-left: 0;
+    }
+    span.modal-contact {
+        font-size: 1rem;
+        line-height: .5rem;
+    }
+    span.contact-time {
+      margin-left: 4px;
+      font-size: .85rem;
+    }
+    p.modal-name {
+      margin-top: -.01rem;
+    }
+    p.indent-left {
+      padding-left: .3rem;
+    }
+    .btn-large {
+      height: 48px !important;
+      line-height: 48px !important;
+    }
+    .course-type-1 {
+      background-position: calc(21% - 0px) calc(100% - 0px);
+    }
+    .course-type-2 {
+      background-position: calc(42% - 0px) calc(100% - 0px);
+    }
+    .course-type-3 {
+      background-position: calc(66% - 0px) calc(100% - 0px);
+    }
+    .intro {
+      background-position: calc(40% - 0px) calc(50% - 0px);
+    }
+    .container h1 {
+      font-size: 3.9rem;
+    }
+    nav .button-collapse i {
+      margin-top: .25rem;
+    }
+}
+
+/* mobile (landscape) */
+@media screen and (orientation:landscape) and (max-height: 480px) {
+  .modal {
+    max-height: calc(81vh - 0px) !important;
+  }
+  .sign-up-button-container .btn-large {
+    padding: 0 .65rem !important;
+  }
+  .btn-large {
+    height: 48px !important;
+    line-height: 48px !important;
+  }
+  .course-type-2 {
+    background-position: calc(34% - 0px) calc(100% - 0px) !important;
+  }
+  .course-type-3 {
+    background-position: calc(62% - 0px) calc(100% - 0px) !important;
+  }  
+}
+
+/* tablet (portrait) */
+@media only screen and (min-width: 621px) and (max-width: 1024px) {  
+    .modal {
+      width: calc(86vw - 0px);
+      height: inherit;
+      max-height: inherit;
+      overflow-y: scroll;
+  }
+  #modal-contact {
+      width: calc(70vw - 0px);
+      height: inherit;
+    }
+
+    .modal-content h4.signup-title {
+      font-size: 1.75rem; /*mobile only*/
+      margin-top: 1rem; /*mobile only*/
+      margin-bottom: 1.75rem; /*mobile only*/  
+    }
+    .modal .modal-content h4 {
+      margin-left: 22px;
+    }    
+    span.step-numbers {
+      font-size: 1.25rem; /*mobile only*/
+      padding: 6px 10px; /*mobile only*/
+    }
+    .steps {
+      font-size: 1.15rem; /*mobile only*/
+    }
+    .modal .modal-content {
+      padding: 2px 26px 2px 12px !important; /*mobile only*/
+    }
+    /* shrink US/CAN/INTL buttons */
+    .sign-up-button-container .btn-large {
+      padding: 0 1.15rem;
+    }
+    .course-type-1 {
+      background-position: calc(18% - 0px) calc(100% - 0px);   
+    }
+    .course-type-2 {
+      background-position: calc(42% - 0px) calc(100% - 0px);
+    }
+    .course-type-3 {
+      background-position: calc(63% - 0px) calc(100% - 0px);
+    }
+    .intro {
+      background-position: calc(40% - 0px) calc(50% - 0px);
+    }  
+}
+
+/* laptop / tablet (landscape) */
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {  
+    .modal {
+        width: calc(78vw - 0px); /*mobile only*/
+        max-height: inherit;
+        overflow-y: visible;
+    }
+    .steps {
+      margin-top: 6px;
+    }
+    #modal-contact {
+        width: 76%;
+        max-height: calc(81vh - 0px);    
+    }
+    .course-type-1 {
+      background-position: calc(58% - 0px) calc(100% - 0px);
+    }
+    .modal .modal-content h4 {
+      margin-left: 22px;
+    }        
+}
+
+/* desktop */
+@media (min-width: 1401px) {
+  .modal {
+    width: calc(60vw - 0px);
+    max-height: inherit;
+    overflow-y: visible;
+  }
+  #modal-contact {
+    width: calc(50vw - 0px);
+    max-height: calc(81vh - 0px);    
+  }
+    .modal .modal-content h4 {
+      margin-left: 22px;
+    }      
 }
