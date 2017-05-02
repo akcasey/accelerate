@@ -1,5 +1,5 @@
 /* - - - - - - - - - - - - - - - - - - - - - - -
-   Global v4.28.17.2
+   Global
    - - - - - - - - - - - - - - - - - - - - - - - */
 html {
     font-size: 16px;
@@ -55,6 +55,12 @@ a:focus, a:hover {
 p {
     margin: 0;
 }
+/* Hide BV elements */ 
+#uni-frontside-banner-wrapper,
+#uniFrontsideNavbar,
+#uni-frontside-footer {
+    display: none;
+}
 .no-margin {
     margin: 0;
 }
@@ -72,24 +78,6 @@ p {
 }
 .google-grey {
     background-color: #f6f6f6 !important;
-}
-    /* Hide BV elements */ 
-#uni-frontside-banner-wrapper,
-#uniFrontsideNavbar,
-#uni-frontside-footer {
-    display: none;
-}
-/* fix page template */
-.rounded-box-bottom, 
-.blockContainer, 
-.rounded-box-top, 
-#uniFrontsideNavbar, 
-#detailContainer table {
-  display: none;
-}
-div.rounded-box-content {
-  clear: none;
-  border: none;
 }
 
 
@@ -109,6 +97,7 @@ div.rounded-box-content {
     font-weight: 500;
 }
 #menu-navigation a:hover {    
+    /*opacity: 0.8;*/
     color: #464646;
 }
 .modal-trigger a.button-collapse,
@@ -123,7 +112,7 @@ ul li a:focus {
 }
 /* Resize Logo */
 nav .brand-logo {
-    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/logo_2_285-300.png");
+    background-image: url("/userfiles/3087/CustomBlock/logo_2_285-300.png");
     height: 50px;
     width: 140px;
     margin-top: 6px;
@@ -233,8 +222,7 @@ nav a.button-collapse i {
 }
 .modal {
     bottom: initial;
-    height: inherit;  
-    overflow-y: auto;     
+    max-height: calc(100vh - 520px);    
 }
 .indent-left {
     padding-left: 20px;
@@ -307,6 +295,8 @@ span.modal-contact {
    Footer
    - - - - - - - - - - - - - - - - - - - - - - - */
 
+#contact {
+}
 footer a:hover {
     text-decoration: underline;
 }
@@ -318,14 +308,16 @@ footer.page-footer {
     margin: 1.4em 0;
 }
 #agd-logo {
-    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/agd-pace-logo-large.png"); 
+    background-image: url("/userfiles/3087/CustomBlock/agd-pace-logo-large.png"); 
     height: 190px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: calc(50% - 0px) calc(50% - 0px);
 }
+#agd-approval {
+}
 #adacerp-logo {
-    background-image: url("https://go.bluevolt.com/userfiles/3087/CustomBlock/adaCerp-500-2.png");  
+    background-image: url("/userfiles/3087/CustomBlock/adaCerp-500-2.png");  
     height: 34px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -426,6 +418,18 @@ footer.page-footer {
    - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* - - - - - BODY - - - - - */
+/* fix page template */
+.rounded-box-bottom, 
+.blockContainer, 
+.rounded-box-top, 
+#uniFrontsideNavbar,
+#detailContainer table {
+  display: none;
+}
+div.rounded-box-content {
+  clear: none;
+  border: none;
+}
 #detailContainer,
 #uni-frontside-inner-wrapper, 
 div.rounded-box-content-marginfix {
@@ -450,7 +454,7 @@ h1#courseName {
     color: #fff;
 }
 .site-header-contents {   
-    background: linear-gradient(rgba(0, 114, 206, 0.9), rgba(0, 114, 206, 0.8)), url("https://go.bluevolt.com/userfiles/3087/CustomBlock/mb-bg-fb-08-75q.jpg");
+    background: linear-gradient(rgba(0, 114, 206, 0.9), rgba(0, 114, 206, 0.8)), url("/userfiles/3087/CustomBlock/mb-bg-fb-08-75q.jpg");
     background-position: calc(100% - 0px) calc(98% - 0px);
     background-size: cover;
 }
@@ -460,7 +464,7 @@ h1#courseName {
     margin-right: auto;
     margin-bottom: 40px;
     width: 74%;
-    max-width: 1030px;
+    max-width: 1000px;
     min-height: 100px;
 }
 
@@ -506,6 +510,7 @@ ul.tabs {
     position: relative;
     display: flex;
     flex-direction: column;
+    /*min-height: 82vh;*/
 }
 #main-content-one p,
 #main-content-two p {
@@ -554,11 +559,11 @@ ul.course-description-list li {
 .contenttext {
   color: inherit;  
   font: inherit;
-  font-size: inherit;
+  font-size: inherit; /*1.1em*/ 
 }
 /* header image over course description: 655x260 */
 #course-description-header {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url('https://go.bluevolt.com/userfiles/3087/course_descriptions/c2e8be66-51cc-4aba-abd1-ecf51b132286/DST-header.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url('/userfiles/3087/course_descriptions/c2e8be66-51cc-4aba-abd1-ecf51b132286/AEC-tech-training655x260.jpg');
     background-size: cover;
     height: 260px;
     margin: -14px -32px 32px -32px;
@@ -725,9 +730,13 @@ div#AdditionalLinks a:hover {
 }
 #AdditionalLinks #lnkEditCourse {
     position: relative;
+    /*bottom: 26px;
+    right: 0;*/
 }
 #AdditionalLinks #lnkCourseEnrollment {
     position: relative;
+    /*bottom: 2px;
+    right: 0;*/
 }
 #pnlCourseTitleCostButton h2 {
     font-size: .95rem;
@@ -755,6 +764,7 @@ div#AdditionalLinks a:hover {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 1rem;
+    /*line-height: 2.875rem;*/
 }
 /* Module Description */
 .contenttextgray {
@@ -785,6 +795,8 @@ a.view-launch {
 #DataGridModules {
     margin-top: .5rem;
 }
+#DataGridModules tr td span {
+}
 tr td.contenttext div.contenttext {
     font-size: 1rem;
     font-weight: 400;
@@ -799,20 +811,19 @@ img#sectionImage {
 /* course dates container */
 #pnlSchedule {
     max-height: none !important;
-    overflow-y: inherit !important;    
 }
 #pnlCourseTitleCostButton { /* original details tab */
-    float: none;
-    width: inherit;
-    margin-top: -1rem;
+  float: none;
+  width: inherit;
+  margin-top: -2rem;
 }
 #pnlEnroll {
     padding: 4px 0;
-    margin-bottom: -3rem;
+    margin-bottom: -3rem;    
 }
 
 /* - - - - - Enroll button - - - - - */
-#pnlCourseTitleCostButton a#btnEnroll, a#btnEnrollPublic {
+#pnlCourseTitleCostButton a#btnEnroll {
     height: 54px;
     line-height: 54px;
     text-decoration: none;
@@ -828,7 +839,7 @@ img#sectionImage {
     text-transform: uppercase;
     font-weight: 500;
 }  
-input#btnSelectSchedule, #btnEnrollPublic {
+input#btnSelectSchedule {
     height: 54px;
     text-decoration: none;
     color: #fff;
@@ -929,183 +940,4 @@ span.timeZone {
     font-size: 1.1rem;
     margin-top: 2.5rem;
 }
-#outline-additional ul.course-description-list li {
-    list-style: none;
-}
-ul.agenda-list {
-    margin-left: -1rem;
-    margin-bottom: 2rem;
-    padding-bottom: 4rem;    
-}
-.agenda-times {
-    font-weight: 500;
-    width: 40%;
-    opacity: .95;
-}
-.agenda-description {
-    width: 60%;   
-}
-p.file-download {
-    margin: .75rem 0 1.5rem 0 !important;
-}
-img.speaker-headshot {
-    float: left;
-    margin: 6px 24px 6px 6px;
-    width: 126px;
-}
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -
-   Responsive
-   - - - - - - - - - - - - - - - - - - - - - - - */
-
-/* mobile */
-@media only screen and (max-width: 620px) {
-    .modal {
-      top: 12% !important; /*mobile only*/
-      height: inherit; /*height: calc(76vh - 0px);*/
-      max-height: 80%; /*inherit;*/
-      overflow-y: scroll;
-    }
-    #modal-contact {
-      top: 4% !important;
-      max-height: 90%;
-    }
-    #modal-contact .modal-content {
-      padding: 2px 12px 2px 12px !important;
-    }
-    .select-wrapper {
-      width: 13rem;
-    }
-    .navbar-fixed {
-      height: 62px;
-    }
-    .modal-content-header {
-      height: 80px;
-      padding-top: 1.5rem;
-    }
-    .modal-content h4.signup-title {
-      font-size: 1.75rem; /*mobile only*/
-      margin-top: 1rem; /*mobile only*/
-      margin-bottom: 1.75rem; /*mobile only*/  
-    }
-    span.step-numbers {
-      font-size: 1.25rem; /*mobile only*/
-      padding: 6px 10px; /*mobile only*/
-    }
-    .steps {
-      font-size: 1.15rem; /*mobile only*/
-      margin-top: 0;
-    }
-    .modal .modal-content {
-      padding: 2px 26px 2px 12px !important; /*mobile only*/
-    }
-    .modal .modal-content h4 {
-      margin-left: 12px;
-    }
-    .modal .modal-content .modal-header {
-      padding: .5rem 0 .5rem 0;
-    }    
-    .modal-name-group {
-      padding-top: 0;
-      padding-left: 0;
-    }
-    span.modal-contact {
-        font-size: 1rem;
-        line-height: .5rem;
-    }
-    span.contact-time {
-      margin-left: 4px;
-      font-size: .85rem;
-    }
-    p.modal-name {
-      margin-top: -.01rem;
-    }
-    p.indent-left {
-      padding-left: .3rem;
-    }
-    .container h1 {
-      font-size: 3.9rem;
-    }
-    nav .button-collapse i {
-      margin-top: .25rem;
-    }
-}
-
-/* mobile (landscape) */
-@media screen and (orientation:landscape) and (max-height: 480px) {
-  .modal {
-    max-height: calc(81vh - 0px) !important;
-  }
-  .sign-up-button-container .btn-large {
-    padding: 0 .65rem !important;
-  }
-}
-
-/* tablet (portrait) */
-@media only screen and (min-width: 621px) and (max-width: 1024px) {  
-    .modal {
-      width: calc(86vw - 0px);
-      height: inherit;
-      max-height: inherit;
-      overflow-y: scroll;
-  }
-  #modal-contact {
-      width: calc(70vw - 0px);
-      height: inherit;
-    }
-
-    .modal-content h4.signup-title {
-      font-size: 1.75rem; /*mobile only*/
-      margin-top: 1rem; /*mobile only*/
-      margin-bottom: 1.75rem; /*mobile only*/  
-    }
-    .modal .modal-content h4 {
-      margin-left: 22px;
-    }    
-    span.step-numbers {
-      font-size: 1.25rem; /*mobile only*/
-      padding: 6px 10px; /*mobile only*/
-    }
-    .steps {
-      font-size: 1.15rem; /*mobile only*/
-    }
-    .modal .modal-content {
-      padding: 2px 26px 2px 12px !important; /*mobile only*/
-    }
-}
-
-/* laptop / tablet (landscape) */
-@media only screen and (min-width: 1025px) and (max-width: 1400px) {  
-    .modal {
-        width: calc(78vw - 0px); /*mobile only*/
-        max-height: inherit;
-        overflow-y: visible;
-    }
-    .steps {
-      margin-top: 6px;
-    }
-    #modal-contact {
-        width: 76%;
-        max-height: calc(81vh - 0px);    
-    }
-    .modal .modal-content h4 {
-      margin-left: 22px;
-    }        
-}
-
-/* desktop */
-@media (min-width: 1401px) {
-  .modal {
-    width: calc(60vw - 0px);
-    max-height: inherit;
-    overflow-y: visible;
-  }
-  #modal-contact {
-    width: calc(50vw - 0px);
-    max-height: calc(81vh - 0px);    
-  }
-    .modal .modal-content h4 {
-      margin-left: 22px;
-    }      
-}
+  
