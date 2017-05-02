@@ -689,6 +689,30 @@ span.timeZone {
     padding: 0 0.75rem;
     font-size: 1.1rem;
 }
+#outline-additional ul.course-description-list li {
+    list-style: none;
+}
+ul.agenda-list {
+    margin-left: -1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;    
+}
+.agenda-times {
+    font-weight: 500;
+    width: 40%;
+    opacity: .95;
+}
+.agenda-description {
+    width: 60%;   
+}
+p.file-download {
+    margin: .75rem 0 1.5rem 0 !important;
+}
+img.speaker-headshot {
+    float: left;
+    margin: 6px 22px 5px 6px;
+    width: 126px;
+}
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - -
